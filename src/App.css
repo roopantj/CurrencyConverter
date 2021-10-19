@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+.currency-input {
+  width: 80%;
+  height: 10rem;
+  background: rgb(195, 195, 236);
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 474px) {
+  .currency-input {
+    height: 80vh;
+  }
+}

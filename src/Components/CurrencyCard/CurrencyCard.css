@@ -1,0 +1,24 @@
+.currency-card {
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.currency-card input {
+  border: none;
+  border-radius: 5px;
+  height: 1.5rem;
+  margin: 5px;
+  padding: 5px;
+
+  max-width: 10rem;
+}
+.currency-card .dropdown {
+  border-radius: 5px;
+  width: fit-content;
+}
+@media (max-width: 474px) {
+  .currency-card {
+    flex-direction: column;
+  }
+}
