@@ -35,6 +35,12 @@ const App = () => {
 
   const handleChange = (event) => setInput(event.target.value);
 
+  const exchange = () => {
+    const initialFrom = fromCurrency;
+    const initialTo = toCurrency;
+    updateFrom(initialTo);
+    updateTo(initialFrom);
+  };
   return (
     <div className="App">
       <h1>Currency Converter</h1>
@@ -58,6 +64,7 @@ const App = () => {
             isReadOnly={true}
             handleChange={handleChange}
           />
+          <button onClick={exchange}>Exchange</button>
         </div>
       )}
     </div>
